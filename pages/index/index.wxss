@@ -1,0 +1,61 @@
+/**index.wxss**/
+.home {
+  height: 100%;
+}
+
+.home .home_swiper swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+
+.home .home_swiper swiper image {
+  width: 100%;
+  height: 340rpx;
+}
+
+.home .home_cate {
+  display: flex;
+}
+
+.home .home_cate navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+
+.home .home_cate navigator image {
+  width: 100%;
+}
+
+.home .home_floor {
+  width: 100%;
+}
+
+.home .home_floor .floor_group .floor_title {
+  margin: 10rpx 8rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #1296db;
+}
+
+.home .home_floor .floor_group .floor_content {
+  overflow: hidden;
+}
+
+.home .home_floor .floor_group .floor_content navigator {
+  float: left;
+  width: 33.3%;
+}
+
+.home .home_floor .floor_group .floor_content navigator:nth-last-child(-n+4) {
+  height: 27.72711vw;
+  border-left: 10rpx solid #fff;
+}
+
+.home .home_floor .floor_group .floor_content navigator:nth-child(2), .home .home_floor .floor_group .floor_content navigator:nth-child(3) {
+  border-bottom: 10rpx solid #fff;
+}
+
+.home .home_floor .floor_group .floor_content navigator image {
+  width: 100%;
+  height: 100%;
+}

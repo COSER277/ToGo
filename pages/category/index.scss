@@ -1,0 +1,57 @@
+/* pages/category/index.wxss */
+page{
+    height: 100%;
+}
+.cate{
+    height: 100%;
+    .cate_container{
+        height: calc(100vh - 90rpx);
+        display: flex;      
+        .left_menu{
+           flex: 2;//width 占2份 height 100%
+            font-size: 32rpx;
+            text-align: center;
+            .item_name{
+                padding: 10rpx 0;
+            }
+        }
+        .actived{
+            color: var(--themeColor);
+            border-left: 5rpx solid #1296db;
+        }
+        .right_content{ 
+            flex: 5;//width 占5份 height 100%
+           
+            .goods_group{
+                .group_name{
+                    height: 80rpx;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .delmater{
+                        color: #ccc;
+                        padding: 0 10rpx;
+                    }
+                    .name{
+                        text-align: center;
+                    }
+                }
+                .group_list{
+                    display: flex;
+                    flex-wrap: wrap;
+                    navigator{
+                        width: 33.3%;
+                        text-align: center;
+                        image{
+                            width: 50%;
+                        }
+                        .good_name{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}

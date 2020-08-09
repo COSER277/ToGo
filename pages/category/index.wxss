@@ -1,0 +1,62 @@
+/* pages/category/index.wxss */
+page {
+  height: 100%;
+}
+
+.cate {
+  height: 100%;
+}
+
+.cate .cate_container {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+
+.cate .cate_container .left_menu {
+  flex: 2;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.cate .cate_container .left_menu .item_name {
+  padding: 10rpx 0;
+}
+
+.cate .cate_container .actived {
+  color: var(--themeColor);
+  border-left: 5rpx solid #1296db;
+}
+
+.cate .cate_container .right_content {
+  flex: 5;
+}
+
+.cate .cate_container .right_content .goods_group .group_name {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cate .cate_container .right_content .goods_group .group_name .delmater {
+  color: #ccc;
+  padding: 0 10rpx;
+}
+
+.cate .cate_container .right_content .goods_group .group_name .name {
+  text-align: center;
+}
+
+.cate .cate_container .right_content .goods_group .group_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cate .cate_container .right_content .goods_group .group_list navigator {
+  width: 33.3%;
+  text-align: center;
+}
+
+.cate .cate_container .right_content .goods_group .group_list navigator image {
+  width: 50%;
+}

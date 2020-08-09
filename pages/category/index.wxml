@@ -1,0 +1,49 @@
+<!--pages/category/index.wxml-->
+<view class="cate">
+	<!-- 搜索框 -->
+	<SearchInput></SearchInput>
+	<view class="cate_container">
+	<!-- 左侧 -->
+		<scroll-view scroll-y class="left_menu"  >
+		<view class="left_menu_item" 
+		wx:for="{{leftList}}" 
+		wx:for-item="item" 
+		wx:key="cat_name"
+		wx:for-index="index"
+   data-index="{{index}}"
+		bindtap="handleItemActived"
+		>
+			<view class="item_name {{currentIndex==index?'actived':''}}"
+			
+			>{{item}}</view>
+		</view>
+		</scroll-view>
+	<!-- 右侧 -->
+		<scroll-view scroll-top="{{scrollTop}}" scroll-y class="right_content">
+			<view class="goods_group" 
+			wx:for="{{rightList}}" 
+			wx:for-item="item1" 
+			wx:for-index="index1"
+			wx:key="cat_id"
+			>
+				<view class="group_name">
+					<text class="delmater">/</text>
+					<view class="name">{{item1.cat_name}}</view>
+					<text  class="delmater">/</text>
+				</view>
+				<view class="group_list" >
+					<navigator 
+          url="/pages/goods_list/index?query={{item2.cat_name}}"
+					wx:for-item="item2" wx:for="{{item1.children}}"
+					wx:for-index="index2"
+					wx:key="cat_id"
+					>
+						<image mode="widthFix" src="{{item2.cat_icon}}" />
+						<view class="good_name">{{item2.cat_name}}</view>
+					</navigator>
+				</view>
+			</view>
+			
+		</scroll-view>
+	</view>
+</view>

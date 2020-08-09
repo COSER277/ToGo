@@ -1,0 +1,61 @@
+/**index.wxss**/
+.home{
+    height: 100%;
+    .home_swiper{
+        swiper{
+            width: 750rpx;
+            height: 340rpx; 
+                image{
+                    width: 100%;
+                    height: 340rpx;
+                }
+        }
+    }
+    .home_cate{
+        display: flex;
+        navigator {
+            flex: 1;
+            padding: 20rpx;
+            image {
+                width: 100%;
+               
+            }
+        }
+    }
+    .home_floor{
+      
+        width: 100%;
+       .floor_group{
+          
+           .floor_title{
+               margin: 10rpx 8rpx;
+               font-size:36rpx;
+               font-weight: 600;
+               color: #1296db;
+           }
+           .floor_content{
+            //    清除浮动
+            overflow: hidden;
+               navigator{
+                   float: left;
+                   width: 33.3%;
+                   &:nth-last-child(-n+4){
+                       //原图 232*386
+                    //    232/386=33.33vw /heigth
+                    // 所以
+                    height: 33.33vw*386/232/2;
+                    border-left: 10rpx solid #fff;
+                   }
+                   &:nth-child(2),
+                   &:nth-child(3){
+                       border-bottom: 10rpx solid #fff;
+                   }
+                   image{
+                    width: 100%;
+                    height: 100%;
+                   }
+               }
+           }
+       }
+    }
+}

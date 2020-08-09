@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "ToGo",
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput"
+  }
+}
